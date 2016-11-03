@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-transparent-theme",
+  "version": "1.0.0",
+  "description": "Bootstrap Transparent Theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexKryzh/bootstrap-transparent-theme.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "transparent",
+    "theme"
+  ],
+  "author": "Alex Kryzhanovskyy",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AlexKryzh/bootstrap-transparent-theme/issues"
+  },
+  "homepage": "https://github.com/AlexKryzh/bootstrap-transparent-theme#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1"
+  }
+}
