@@ -22,8 +22,13 @@
   },
   "homepage": "https://github.com/AlexKryzh/bootstrap-transparent-theme#readme",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
     "browser-sync": "^2.17.5",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "del": "^2.2.2",
+    "gulp-sass": "^2.3.2",
+    "run-sequence": "^1.2.2"
   }
 }
