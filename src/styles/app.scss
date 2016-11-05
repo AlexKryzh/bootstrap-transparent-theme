@@ -1,2 +1,10 @@
 @import 'variables';
 @import 'bootstrap';
+
+$hue: random(256)-1;
+
+$body-bg: hsl($hue, 100%, 50%);
+
+body{
+    background-color: hsl($hue, 100%, 50%);
+}
