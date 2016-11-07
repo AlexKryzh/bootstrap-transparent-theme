@@ -14,14 +14,16 @@ $gray-dark:          #fff;
 $gray:                  #fff;
 $gray-light:         #fff;
 $gray-lighter:      #fff;
+
+$black:                #000;
 $white:                #fff;
 
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:          #fff;
+$brand-success:         #fff;
+$brand-info:                #fff;
+$brand-warning:         #fff;
+$brand-danger:          #fff;
 
 
 //== Scaffolding
@@ -371,12 +373,12 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-color:            rgba($white, .9);
+$navbar-default-bg:                rgba($white, .4);
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
+$navbar-default-link-color:                rgba($white, .9);
 $navbar-default-link-hover-color:          #333 !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
@@ -397,9 +399,9 @@ $navbar-default-toggle-border-color:       #ddd !default;
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-$navbar-inverse-color:                      lighten($gray-light, 15%) !default;
-$navbar-inverse-bg:                         #222 !default;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-color:                     rgba($black, .1);
+$navbar-inverse-bg:                         rgba($black, .2);
+$navbar-inverse-border:                   rgba($black, .2);
 
 // Inverted navbar links
 $navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
@@ -700,9 +702,9 @@ $list-group-disabled-bg:         $gray-lighter !default;
 //** Text color for content within disabled list items
 $list-group-disabled-text-color: $list-group-disabled-color !default;
 
-$list-group-link-color:         #555 !default;
-$list-group-link-hover-color:   $list-group-link-color !default;
-$list-group-link-heading-color: #333 !default;
+$list-group-link-color:         inherit;
+$list-group-link-hover-color:   $white;
+$list-group-link-heading-color: $white;
 
 
 //== Panels
