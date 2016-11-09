@@ -1,8 +1,21 @@
+@import 'variables';
+
 body{
     font-weight: 100;
     letter-spacing: 1px;
-}
-
-.list-group-item{
-    margin-bottom: 1px;
+    .btn{
+        text-shadow: 1px 1px 1px rgba(0,0,0, .3);
+        letter-spacing: 1px;
+    }
+    .list-group-item{
+        margin-bottom: 1px;
+    }
+    .lead{
+        font-weight: 100;
+    }
+    .form-group{
+        .form-control{
+            border: 1px dashed rgba($white, .6);
+        }
+    }
 }
