@@ -153,8 +153,8 @@ $table-border-color:            transparent;
 
 $btn-font-weight:                100;
 
-$btn-default-color:              #333 !default;
-$btn-default-bg:                 #fff !default;
+$btn-default-color:              $white;
+$btn-default-bg:                 rgba(255, 255, 255, .3);
 $btn-default-border:             transparent;
 
 $btn-primary-color:              #fff !default;
@@ -190,14 +190,14 @@ $btn-border-radius-small:        $border-radius-small !default;
 //##
 
 //** `<input>` background color
-$input-bg:                       #fff !default;
+$input-bg:         transparent;
 //** `<input disabled>` background color
 $input-bg-disabled:              $gray-lighter !default;
 
 //** Text color for `<input>`s
 $input-color:                    $gray !default;
 //** `<input>` border color
-$input-border:                   transparent;
+$input-border:       1px dashed rgba($white, .7);
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -228,7 +228,7 @@ $legend-color:                   $gray-dark !default;
 $legend-border-color:            transparent;
 
 //** Background color for textual input addons
-$input-group-addon-bg:           $gray-lighter !default;
+$input-group-addon-bg:           rgba($white, 0.2);
 //** Border color for textual input addons
 $input-group-addon-border-color: transparent;
 
@@ -373,16 +373,16 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:            rgba($white, .9);
-$navbar-default-bg:                rgba($white, .4);
+$navbar-default-color:            $white;
+$navbar-default-bg:                rgba($white, .2);
 $navbar-default-border:            transparent;
 
 // Navbar links
-$navbar-default-link-color:                rgba($white, .9);
-$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                $white;
+$navbar-default-link-hover-color:          $white;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-color:         $white;
+$navbar-default-link-active-bg:            rgba($white, .1);
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
@@ -405,10 +405,10 @@ $navbar-inverse-border:                   transparent;
 
 // Inverted navbar links
 $navbar-inverse-link-color:                 lighten($gray-light, 15%) !default;
-$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-color:           #fff;
 $navbar-inverse-link-hover-bg:              transparent !default;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%) !default;
+$navbar-inverse-link-active-bg:             rgba($black, .1);
 $navbar-inverse-link-disabled-color:        #444 !default;
 $navbar-inverse-link-disabled-bg:           transparent !default;
 
@@ -631,7 +631,7 @@ $modal-sm:                    300px !default;
 
 $alert-padding:               15px !default;
 $alert-border-radius:         $border-radius-base !default;
-$alert-link-font-weight:      bold !default;
+$alert-link-font-weight:      100;
 
 $alert-success-bg:            $state-success-bg !default;
 $alert-success-text:          $state-success-text !default;
@@ -678,14 +678,14 @@ $progress-bar-info-bg:        $brand-info !default;
 //##
 
 //** Background color on `.list-group-item`
-$list-group-bg:                 rgba($white, 0.4);
+$list-group-bg:                 rgba($white, .2);
 //** `.list-group-item` border color
 $list-group-border:             transparent;
 //** List group border radius
 $list-group-border-radius:      $border-radius-base !default;
 
 //** Background color of single list items on hover
-$list-group-hover-bg:           rgba($white, 0.5);
+$list-group-hover-bg:           rgba($white, .3);
 //** Text color of active list items
 $list-group-active-color:       $component-active-color !default;
 //** Background color of active list items
@@ -711,7 +711,7 @@ $list-group-link-heading-color: $white;
 //
 //##
 
-$panel-bg:                    rgba($white, 0.2);
+$panel-bg:                    rgba($white, .2);
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       10px 15px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
@@ -719,11 +719,11 @@ $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
 $panel-inner-border:          transparent;
-$panel-footer-bg:             rgba($white, .4);
+$panel-footer-bg:             rgba($white, .2);
 
 $panel-default-text:          $gray-dark !default;
 $panel-default-border:        transparent;
-$panel-default-heading-bg:    rgba($white, .4);
+$panel-default-heading-bg:    rgba($white, .3);
 
 $panel-primary-text:          #fff !default;
 $panel-primary-border:        $brand-primary !default;
@@ -769,7 +769,7 @@ $thumbnail-caption-padding:   9px !default;
 //
 //##
 
-$well-bg:                     rgba($white, 0.2);
+$well-bg:                     rgba($white, .2);
 $well-border:               transparent;
 
 
@@ -787,7 +787,7 @@ $badge-active-color:          $link-color !default;
 //** Badge background color in active nav link
 $badge-active-bg:             #fff !default;
 
-$badge-font-weight:           bold !default;
+$badge-font-weight:           100;
 $badge-line-height:           1 !default;
 $badge-border-radius:         10px !default;
 
@@ -829,7 +829,7 @@ $carousel-caption-color:                      #fff !default;
 //
 //##
 
-$close-font-weight:           bold !default;
+$close-font-weight:           100;
 $close-color:                 #000 !default;
 $close-text-shadow:           0 1px 0 #fff !default;
 
@@ -869,7 +869,7 @@ $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter !default;
 //** Page header border color
-$page-header-border-color:    rgba($white, 0.6);
+$page-header-border-color:    transparent;
 //** Width of horizontal description list titles
 $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Point at which .dl-horizontal becomes horizontal
