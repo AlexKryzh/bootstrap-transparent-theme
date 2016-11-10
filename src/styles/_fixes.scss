@@ -16,6 +16,9 @@ body{
     .form-group{
         .form-control{
             border: 1px dashed rgba($white, .6);
+            &[disabled]{
+                opacity:.5;
+            }
         }
     }
 }

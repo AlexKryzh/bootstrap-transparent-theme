@@ -154,30 +154,30 @@ $table-border-color:            transparent;
 $btn-font-weight:                100;
 
 $btn-default-color:              $white;
-$btn-default-bg:                 rgba(255, 255, 255, .3);
+$btn-default-bg:                 rgba($white, .2);
 $btn-default-border:             transparent;
 
-$btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-color:              $white;
+$btn-primary-bg:                 rgba($white, .2);
 $btn-primary-border:             transparent;
 
-$btn-success-color:              #fff !default;
-$btn-success-bg:                 $brand-success !default;
+$btn-success-color:              $white;
+$btn-success-bg:                 rgba($white, .2);
 $btn-success-border:           transparent;
 
-$btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
+$btn-info-color:                 $white;
+$btn-info-bg:                    rgba($white, .2);
 $btn-info-border:               transparent;
 
-$btn-warning-color:              #fff !default;
-$btn-warning-bg:                 $brand-warning !default;
+$btn-warning-color:              $white;
+$btn-warning-bg:                 rgba($white, .2);
 $btn-warning-border:            transparent;
 
-$btn-danger-color:               #fff !default;
-$btn-danger-bg:                  $brand-danger !default;
+$btn-danger-color:               $white;
+$btn-danger-bg:                  rgba($white, .2);
 $btn-danger-border:             transparent;
 
-$btn-link-disabled-color:        $gray-light !default;
+$btn-link-disabled-color:        rgba($white, .4);
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base !default;
@@ -192,7 +192,7 @@ $btn-border-radius-small:        $border-radius-small !default;
 //** `<input>` background color
 $input-bg:         transparent;
 //** `<input disabled>` background color
-$input-bg-disabled:              $gray-lighter !default;
+$input-bg-disabled:              transparent;
 
 //** Text color for `<input>`s
 $input-color:                    $gray !default;
@@ -435,21 +435,21 @@ $nav-disabled-link-color:                   $gray-light !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
 //== Tabs
-$nav-tabs-border-color:                     transparent;
+$nav-tabs-border-color:                     rgba($white, .2);
 
-$nav-tabs-link-hover-border-color:          transparent;
+$nav-tabs-link-hover-border-color:          rgba($white, .2);
 
-$nav-tabs-active-link-hover-bg:             $body-bg !default;
-$nav-tabs-active-link-hover-color:          $gray !default;
-$nav-tabs-active-link-hover-border-color:   transparent;
+$nav-tabs-active-link-hover-bg:             rgba($white, .2);
+$nav-tabs-active-link-hover-color:          $white;
+$nav-tabs-active-link-hover-border-color:   rgba($white, .2);
 
-$nav-tabs-justified-link-border-color:            transparent;
-$nav-tabs-justified-active-link-border-color:     transparent;
+$nav-tabs-justified-link-border-color:           rgba($white, .2);
+$nav-tabs-justified-active-link-border-color:     rgba($white, .2);
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
-$nav-pills-active-link-hover-color:         $component-active-color !default;
+$nav-pills-active-link-hover-bg:            rgba($white, .2);
+$nav-pills-active-link-hover-color:         $white;
 
 
 //== Pagination
@@ -495,7 +495,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-bg:                   rgba($white, .2);
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
@@ -799,11 +799,11 @@ $badge-border-radius:         10px !default;
 $breadcrumb-padding-vertical:   8px !default;
 $breadcrumb-padding-horizontal: 15px !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 #f5f5f5 !default;
+$breadcrumb-bg:                 rgba($white, .2);
 //** Breadcrumb text color
-$breadcrumb-color:              #ccc !default;
+$breadcrumb-color:              $white;
 //** Text color of current page in the breadcrumb
-$breadcrumb-active-color:       $gray-light !default;
+$breadcrumb-active-color:       $white;
 //** Textual separator for between breadcrumb elements
 $breadcrumb-separator:          "/" !default;
 
