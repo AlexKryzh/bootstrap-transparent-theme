@@ -449,7 +449,7 @@ $nav-tabs-justified-active-link-border-color:     rgba($white, .2);
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
 $nav-pills-active-link-hover-bg:            rgba($white, .2);
-$nav-pills-active-link-hover-color:         rgba($white, .2);
+$nav-pills-active-link-hover-color:         $white;
 
 
 //== Pagination
@@ -457,7 +457,7 @@ $nav-pills-active-link-hover-color:         rgba($white, .2);
 //##
 
 $pagination-color:                     $link-color !default;
-$pagination-bg:                        #fff !default;
+$pagination-bg:                        rgba($white, .2);
 $pagination-border:                    transparent;
 
 $pagination-hover-color:               $link-hover-color !default;
@@ -465,11 +465,11 @@ $pagination-hover-bg:                  $gray-lighter !default;
 $pagination-hover-border:              transparent;
 
 $pagination-active-color:              #fff !default;
-$pagination-active-bg:                 $brand-primary !default;
+$pagination-active-bg:                 rgba($white, .3);
 $pagination-active-border:             $brand-primary !default;
 
 $pagination-disabled-color:            $gray-light !default;
-$pagination-disabled-bg:               #fff !default;
+$pagination-disabled-bg:               rgba($white, .2);
 $pagination-disabled-border:           transparent;
 
 
@@ -574,17 +574,17 @@ $popover-arrow-outer-fallback-color:  transparent;
 //##
 
 //** Default label background color
-$label-default-bg:            $gray-light !default;
+$label-default-bg:            rgba($white, .2);
 //** Primary label background color
-$label-primary-bg:            $brand-primary !default;
+$label-primary-bg:            rgba($white, .2);
 //** Success label background color
-$label-success-bg:            $brand-success !default;
+$label-success-bg:            rgba($white, .2);
 //** Info label background color
-$label-info-bg:               $brand-info !default;
+$label-info-bg:               rgba($white, .2);
 //** Warning label background color
-$label-warning-bg:            $brand-warning !default;
+$label-warning-bg:            rgba($white, .2);
 //** Danger label background color
-$label-danger-bg:             $brand-danger !default;
+$label-danger-bg:             rgba($white, .2);
 
 //** Default label text color
 $label-color:                 #fff !default;
@@ -655,22 +655,22 @@ $alert-danger-border:         $state-danger-border !default;
 //##
 
 //** Background color of the whole progress component
-$progress-bg:                 #f5f5f5 !default;
+$progress-bg:                 rgba($white, .2);
 //** Progress bar text color
-$progress-bar-color:          #fff !default;
+$progress-bar-color:          rgba($white, .2);
 //** Variable for setting rounded corners on progress bar.
 $progress-border-radius:      $border-radius-base !default;
 
 //** Default progress bar color
-$progress-bar-bg:             $brand-primary !default;
+$progress-bar-bg:             rgba($white, .2);
 //** Success progress bar color
-$progress-bar-success-bg:     $brand-success !default;
+$progress-bar-success-bg:     rgba($white, .2);
 //** Warning progress bar color
-$progress-bar-warning-bg:     $brand-warning !default;
+$progress-bar-warning-bg:     rgba($white, .2);
 //** Danger progress bar color
-$progress-bar-danger-bg:      $brand-danger !default;
+$progress-bar-danger-bg:     rgba($white, .2);
 //** Info progress bar color
-$progress-bar-info-bg:        $brand-info !default;
+$progress-bar-info-bg:        rgba($white, .2);
 
 
 //== List group
@@ -799,7 +799,7 @@ $badge-border-radius:         10px !default;
 $breadcrumb-padding-vertical:   8px !default;
 $breadcrumb-padding-horizontal: 15px !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 rgba($white, .2);
+$breadcrumb-bg:                 transparent;
 //** Breadcrumb text color
 $breadcrumb-color:              $white;
 //** Text color of current page in the breadcrumb
