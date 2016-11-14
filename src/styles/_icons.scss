@@ -1,0 +1,17 @@
+.icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: icons;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-danger:before { content: "\EA01" }
+.icon-star:before { content: "\EA02" }
+.icon-success:before { content: "\EA03" }
+.icon-info:before { content: "\EA04" }
+.icon-warning:before { content: "\EA05" }
