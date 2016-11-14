@@ -5,10 +5,14 @@ var iconfont = require('gulp-iconfont');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var runTimestamp = Math.round(Date.now()/1000);
+var consolidate = require('gulp-consolidate');
+var rename = require('gulp-rename');
+var inlineFonts = require('gulp-inline-fonts');
 
 gulp.task('default', function(callback) {
     runSequence('clean',
               'icons',
+              'fonts',
               'styles',
               'index',
               'server',
@@ -20,19 +24,40 @@ gulp.task('clean', function() {
 });
 
 gulp.task('icons', function(){
-    return gulp.src(['assets/icons/*.svg'])
+    return gulp.src(['src/assets/icons/*.svg'])
     .pipe(iconfont({
-      fontName: 'myfont', // required 
+      fontName: 'icons', // required 
+      normalize: true,
       prependUnicode: true, // recommended option 
-      formats: ['ttf', 'eot', 'woff'], // default, 'woff2' and 'svg' are available 
+      formats: ['woff'], // default, 'woff2' and 'svg' are available 
       timestamp: runTimestamp, // recommended to get consistent builds when watching files 
+      log: function(){}
     }))
-      .on('glyphs', function(glyphs, options) {
-        // CSS templating, e.g. 
-        console.log(glyphs, options);
-      })
-    .pipe(gulp.dest('www/fonts/'));
+    .on('glyphs', function(glyphs, options) {
+      gulp.src('icons.css')
+          .pipe(consolidate('lodash', {
+              glyphs: glyphs,
+              fontName: 'icons',
+              fontPath: 'src/assets/fonts/',
+              className: 'icon'
+          }))
+          .pipe(rename('_icons.scss'))
+          .pipe(gulp.dest('src/styles/'));
+    })
+    .pipe(gulp.dest('src/assets/fonts/'));
 });
+
+gulp.task('fonts', function(){
+    return gulp.src('src/assets/fonts/*')
+        .pipe(inlineFonts({
+          name: 'icons',
+          style: 'normal',
+          weight: 'normal',
+          formats: ['woff']
+        }))
+        .pipe(rename('_fonts.scss'))
+        .pipe(gulp.dest('src/styles/'));
+ });
 
 gulp.task('styles', function() {
     return gulp.src('src/styles/*.scss')
@@ -54,5 +79,5 @@ gulp.task('server', function() {
     });
 
     gulp.watch('src/styles/*.scss', ['styles']);
-    gulp.watch('src/*.html').on('change', browserSync.reload);
+    gulp.watch('src/*.html', ['index']).on('change', browserSync.reload);
 });
