@@ -691,7 +691,7 @@ $list-group-active-color:       $component-active-color !default;
 //** Background color of active list items
 $list-group-active-bg:          $component-active-bg !default;
 //** Border color of active list elements
-$list-group-active-border:      $list-group-active-bg !default;
+$list-group-active-border:      transparent;
 //** Text color for content within active list items
 $list-group-active-text-color: $white;
 
@@ -723,11 +723,11 @@ $panel-footer-bg:             rgba($white, .2);
 
 $panel-default-text:          $gray-dark !default;
 $panel-default-border:        transparent;
-$panel-default-heading-bg:    rgba($white, .3);
+$panel-default-heading-bg:    rgba($white, .15);
 
 $panel-primary-text:          $white;
 $panel-primary-border:        transparent;
-$panel-primary-heading-bg:    rgba($white, .3);
+$panel-primary-heading-bg:    rgba($white, .15);
 
 $panel-success-text:          $state-success-text !default;
 $panel-success-border:        $state-success-border !default;
