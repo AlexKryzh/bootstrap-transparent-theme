@@ -460,13 +460,13 @@ $pagination-color:                     $link-color !default;
 $pagination-bg:                        rgba($white, .2);
 $pagination-border:                    transparent;
 
-$pagination-hover-color:               $link-hover-color !default;
-$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-color:               $white;
+$pagination-hover-bg:                  rgba($white, .3);
 $pagination-hover-border:              transparent;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-bg:                 rgba($white, .3);
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              $white;
+$pagination-active-bg:                 rgba($white, .4);
+$pagination-active-border:             transparent;
 
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               rgba($white, .2);
@@ -830,8 +830,8 @@ $carousel-caption-color:                      #fff !default;
 //##
 
 $close-font-weight:           100;
-$close-color:                 #000 !default;
-$close-text-shadow:           0 1px 0 #fff !default;
+$close-color:                 #fff;
+$close-text-shadow:           transparent;
 
 
 //== Code
